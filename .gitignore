@@ -1,0 +1,33 @@
+# python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# virtual env
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# logs
+*.log
+
+# docker
+docker-compose.override.yml
+
+# streamlit cache
+.streamlit/
+
+# vscode
+.vscode/
+
+# model checkpoints
+*.pth
+*.pt
+
+# jupyter
+.ipynb_checkpoints
