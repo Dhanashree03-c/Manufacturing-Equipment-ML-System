@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = "https://manufacturing-equipment-ml-system-1.onrender.com/predict"
+API_URL = "https://manufacturing-equipment-ml-system-2.onrender.com/predict"
 
 st.title("Manufacturing Equipment Output Prediction")
 
