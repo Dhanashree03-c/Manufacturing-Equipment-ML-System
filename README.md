@@ -169,7 +169,11 @@ Categorical inputs:
 # Author
 
 **Dhanashree Tankar**
+
 **Sujal Yewale**
+
 **Maheshree Katla**
+
 **Anchal Pandey**
+
 **Haady**
