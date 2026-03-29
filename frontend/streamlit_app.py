@@ -157,7 +157,7 @@ if st.button("Predict Production Output"):
         "Temperature_Pressure_Ratio": Temperature_Pressure_Ratio
     }
 
-    response = requests.post(API_URL, json=payload, headers={"Content-Type": "application/json"})
+    response = requests.post(API_URL, json=payload, headers={"Content-Type": "application/json"}, timeout=30)
 
     if response.status_code == 200:
         result = response.json()["predicted_parts_per_hour"]
