@@ -175,5 +175,3 @@ Categorical inputs:
 **Maheshree Katla**
 
 **Anchal Pandey**
-
-**Haady**
