@@ -157,11 +157,11 @@ if st.button("Predict Production Output"):
         "Temperature_Pressure_Ratio": Temperature_Pressure_Ratio
     }
 
-    response = requests.post(API_URL, json=payload)
+    response = requests.post(API_URL, json=payload, headers={"Content-Type": "application/json"})
 
     if response.status_code == 200:
         result = response.json()["predicted_parts_per_hour"]
         st.success(f"Predicted Parts Per Hour: {result:.2f}")
 
     else:
-        st.error(f"Prediction failed: {response.text}")
+        st.error(f"Prediction failed: {response.status_code} - {response.text}")
