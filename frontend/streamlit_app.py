@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = "https://manufacturing-equipment-ml-system-1.onrender.com"
+API_URL = "https://manufacturing-equipment-ml-system-1.onrender.com/predict"
 
 st.title("Manufacturing Equipment Output Prediction")
 
@@ -164,4 +164,4 @@ if st.button("Predict Production Output"):
         st.success(f"Predicted Parts Per Hour: {result:.2f}")
 
     else:
-        st.error("Prediction failed")
+        st.error(f"Prediction failed: {response.text}")

@@ -1,11 +1,20 @@
 from fastapi import FastAPI
 from .schema import MachineInput
 from .predict import predict_output
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Manufacturing Output Prediction API",
     description="Predict hourly machine production output",
     version="1.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 @app.get("/")
